@@ -1,0 +1,20 @@
+{
+  "name": "boilerplate-nodejs-api-only-mongodb",
+  "version": "1.0.0",
+  "description": "An Express Server Node.js API only boilerplate with Mongo DB",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dennismachu/boilerplate-nodejs-api-only-mongodb.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dennismachu/boilerplate-nodejs-api-only-mongodb/issues"
+  },
+  "homepage": "https://github.com/dennismachu/boilerplate-nodejs-api-only-mongodb#readme"
+}
