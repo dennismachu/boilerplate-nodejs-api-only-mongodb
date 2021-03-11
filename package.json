@@ -4,7 +4,13 @@
   "description": "An Express Server Node.js API only boilerplate with Mongo DB",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "nyc _mocha --timeout 10000 --exit --report lcovonly -- -R spec",
+    "dev": "nodemon --exec babel-node src/index.js",
+    "start": "pm2-runtime start www/server.js -i max",
+    "watch": "babel ./src --out-dir www --source-maps --watch",
+    "clean": "rimraf www",
+    "transpile": "babel ./src --out-dir www --source-maps",
+    "build": "npm-run-all clean transpile"
   },
   "repository": {
     "type": "git",
