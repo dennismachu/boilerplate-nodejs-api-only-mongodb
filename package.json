@@ -16,5 +16,24 @@
   "bugs": {
     "url": "https://github.com/dennismachu/boilerplate-nodejs-api-only-mongodb/issues"
   },
-  "homepage": "https://github.com/dennismachu/boilerplate-nodejs-api-only-mongodb#readme"
+  "homepage": "https://github.com/dennismachu/boilerplate-nodejs-api-only-mongodb#readme",
+  "dependencies": {
+    "agenda": "^4.0.1",
+    "body-parser": "^1.19.0",
+    "chalk": "^4.1.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "eventemitter3": "^4.0.7",
+    "express": "^4.17.1",
+    "helmet": "^4.4.1",
+    "joi": "^17.4.0",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.1",
+    "mongoose": "^5.11.19",
+    "mongoose-paginate-v2": "^1.3.14",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.4.18",
+    "pm2": "^4.5.4"
+  }
 }
