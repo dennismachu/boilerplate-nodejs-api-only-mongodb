@@ -38,4 +38,7 @@ router.get('/',(req, res, next) =>{
 // import {route name} from '{route path}'
 // {route name}(router)
 
+import notes from './app/notes/notesRoutes'
+notes(router)
+
 module.exports = app
