@@ -1,14 +1,13 @@
 import express from 'express'
-import bodyParser from 'body-parser'
 import morgan from 'morgan'
 import cors from 'cors';
 
 const app = express()
 
-app.use(bodyParser.urlencoded({ extended: true }))
-app.use(bodyParser.json())
-app.use(bodyParser.raw())
-app.use(bodyParser.text())
+app.use(express.urlencoded({ extended: true }))
+app.use(express.json())
+app.use(express.raw())
+app.use(express.text())
 app.use(morgan('dev'))
 app.use(cors())
 
@@ -38,7 +37,7 @@ router.get('/',(req, res, next) =>{
 // import {route name} from '{route path}'
 // {route name}(router)
 
-import notes from './app/notes/notesRoutes'
-notes(router)
+import noteRoutes from './notes/notesRoutes'
+noteRoutes(router)
 
 module.exports = app

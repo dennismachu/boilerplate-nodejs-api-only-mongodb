@@ -6,18 +6,16 @@ import {
     removeNotes
 } from './notesServices'
 
-import {seedNotes} from '../seeders/notesSeed'
+import {seedNotes} from './notesSeeds'
 import apiResponse from '../utility/apiResponse'
 import Joi from 'joi'
 
-const event = require('../events/event-functions')
 // Create
 const create = async (req, res, next) => {
     const {title,description}=req.body
     try {
         let response = await createNotes(title,description)
         let message = 'Note created succeddfully'
-        event.emit('newNote',response)
         return apiResponse.successResponseWithData(res,message,response)
     } catch (error) {
         return apiResponse.errorResponse(res,error.errors)
